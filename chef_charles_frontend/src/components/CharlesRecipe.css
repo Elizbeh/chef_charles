@@ -1,0 +1,57 @@
+.recommendation-section {
+    color: #475467;
+    line-height: 1.75;
+    font-size: 1.125rem;
+    font-weight: 400;
+    width: 80%;
+    margin: 4em auto 0 auto;
+}
+
+/* Chef title */
+.chef {
+    color: black;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    /* Clamp for responsive scaling */
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+/* Markdown lists */
+.recommendation-section ul li,
+.recommendation-section ol li {
+    margin-bottom: 8px;
+}
+
+/* Markdown headings inside ReactMarkdown */
+.recommendation-section h1,
+.recommendation-section h2,
+.recommendation-section h3,
+.recommendation-section h4,
+.recommendation-section h5,
+.recommendation-section h6 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+/* Responsive heading sizes */
+.recommendation-section h1 { font-size: clamp(1.5rem, 5vw, 2rem); }
+.recommendation-section h2 { font-size: clamp(1.25rem, 4vw, 1.75rem); }
+.recommendation-section h3 { font-size: clamp(1.1rem, 3.5vw, 1.5rem); }
+.recommendation-section h4 { font-size: clamp(1rem, 3vw, 1.25rem); }
+.recommendation-section h5 { font-size: clamp(0.9rem, 2.5vw, 1rem); }
+.recommendation-section h6 { font-size: clamp(0.8rem, 2vw, 0.9rem); }
+
+.recommendation-section p {
+    font-size: clamp(0.9rem, 2.5vw, 1.125rem);
+    line-height: 1.6;
+}
+
+/* Reduce width on small screens */
+@media (max-width: 768px) {
+    .recommendation-section {
+        width: 90%;
+        margin-top: 2em;
+    }
+}

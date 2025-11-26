@@ -1,0 +1,31 @@
+.formSec{
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: aqua;
+}
+.formCon {
+    width: 500px;
+    margin: 0 auto;
+    padding: 2em;
+}
+#firstname, #lastname, #password, #description {
+    width: 100%;
+    
+}
+#description{
+    resize: none;
+    padding: .6em;
+}
+#firstname, #lastname, #password {
+    padding: .7em .5em;
+    margin-bottom: .7em;
+}
+fieldset { 
+    padding: 1em;
+    border-color: black; 
+    width: 480px;
+}
+label {
+    font-size: 1rem;
+}

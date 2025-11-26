@@ -1,0 +1,38 @@
+# Node modules
+node_modules/
+server/node_modules/
+
+
+# Environment variables
+.env
+
+
+# IDE files# Node dependencies
+node_modules/
+server/node_modules/
+
+# Environment variables (API keys, secrets)
+.env
+
+# Build output
+build/
+server/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+.vscode/
+
+# Build outputs
+build/
+dist/
+server/dist/
