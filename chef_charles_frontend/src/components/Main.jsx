@@ -38,7 +38,7 @@ export default function Main() {
     } finally {
       setIsLoading(false);
     }
-  };
+  }
 
   return (
     <main>
