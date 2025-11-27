@@ -22,7 +22,7 @@ export default function Main() {
     setIsLoading(true);
     setRecipe(null);
     try {
-      const res = await fetch("http://localhost:3000/api/recipe", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ingredients }),
