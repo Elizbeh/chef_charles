@@ -1,6 +1,11 @@
 # Chef Charles 👨‍🍳
 
+
 Chef Charles is a full-stack web application that helps users generate recipes based on ingredients they have at hand. The app leverages Anthropic Claude AI to provide recipe suggestions in real time.
+
+## 🚀 Live Demo
+
+**Try it out:** [https://chefcharles.netlify.app/](https://chefcharles.netlify.app/)
 
 ## Features
 
