@@ -24,6 +24,8 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 3px dotted #e94c78;
+    margin-right: .5em;
 }
 
 @media (min-width: 789px) {
