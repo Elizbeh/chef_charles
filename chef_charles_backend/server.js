@@ -22,10 +22,10 @@ app.post("/api/recipe", async (req, res) => {
 
   const ingredientsString = ingredients.join(", ");
   const SYSTEM_PROMPT = `
-You are an assistant that receives a list of ingredients that a user has 
-and suggests a recipe they could make with some or all of those ingredients. 
-Format the response in Markdown.
-`;
+    You are an assistant that receives a list of ingredients that a user has 
+    and suggests a recipe they could make with some or all of those ingredients. 
+    Format the response in Markdown.
+    `;
 
   try {
     const message = await anthropic.messages.create({

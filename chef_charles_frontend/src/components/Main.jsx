@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import IngredientsList from "./IngredientsList";
 import CharlesRecipe from "./CharleRecipe";
 import "./Main.css";
 
 export default function Main() {
-  const [ingredients, setIngredients] = React.useState([]);
+  const [ingredients, setIngredients] = React.useState(["chicken", "all the main spices", "corn", "heavy cream", "pasta"]);
   const [recipe, setRecipe] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(false);
+
+  const recipeSection = useRef(null)
+
+ useEffect(() => {
+  if (recipe && recipeSection) {
+    recipeSection.current.scrollIntoView({behavior: "smooth"})
+  }
+ }, [recipe])
 
   const addIngredient = (e) => {
     e.preventDefault();
@@ -54,7 +62,7 @@ export default function Main() {
       </form>
 
       {ingredients.length > 0 && (
-        <IngredientsList ingredients={ingredients} showRecipe={getRecipe} />
+        <IngredientsList ingredients={ingredients} showRecipe={getRecipe} ref={recipeSection}/>
       )}
 
       {isLoading && 
